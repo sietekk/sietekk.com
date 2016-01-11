@@ -1,7 +1,35 @@
 doctype html
 html
   head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(type='text/css', rel='stylesheet', href='/css/bundle.css')
   body
+    div#__preloader__
+      div.la-line-scale-pulse-out-rapid.la-2x
+        div
+        div
+        div
+        div
+        div
     block content
+  footer
+    script(src='/js/bundle.js')
+    script(type='text/javascript').
+      (function() {
+        if (window.APP === undefined) {
+          throw new Error('Application not found!');
+        }
+        var __main__ = document.getElementById('__main__');
+        var __preloader__ = document.getElementById('__preloader__');
+        var __app__ = App.#{render_app};
+        App.render(
+          __app__,
+          __main__,
+          function() {
+            document.body.removeChild(__preloader__);
+          }
+        );
+      })();

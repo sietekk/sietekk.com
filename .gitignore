@@ -28,3 +28,8 @@ node_modules
 
 # Debug log from npm
 npm-debug.log
+
+# Ignore production JS, CSS, and images
+/public/img/**
+/public/css/**
+/public/js/**

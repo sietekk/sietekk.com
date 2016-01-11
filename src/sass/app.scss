@@ -1,0 +1,92 @@
+@import "./preloader.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Open%20Sans");
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-family-serif: "Open Sans";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+$fa-font-path: "../fonts/font-awesome";
+@import "../../../node_modules/font-awesome/scss/font-awesome.scss";
+
+@import "./widget.scss";
+
+.background {
+  background-image: url('/img/raining-cubes.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.on-load-appear {
+  opacity: 0.01;
+}
+
+.on-load-appear.on-load-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+.nav-btn-width {
+  min-width: 100%;
+}
+
+.float-glyph-right {
+  float: right;
+}
+
+.navbar-collapse.in {
+  overflow-y: visible;
+}
+
+.btn-width {
+  width: 100%;
+}
+
+.btn-block-container {
+  max-width: 300px;
+  margin: auto;
+}
+
+.profile-ul {
+  list-style-type:none;
+}
+
+.block-paragraph {
+  padding-left: 25px;
+}
+
+.heading-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.title-text {
+  float: left;
+}
+
+.title-date {
+  float: right;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-img {
+  display: block;
+  margin: auto;
+}
+
+.icon-padding {
+  padding: 5px;
+}
+
+.skill-btn-margin {
+  margin: 0px 5px;
+  border-radius: 0px !important;
+}
